@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="../styles/todo.css" />
+    <script src="../scripts/todo.js"></script>
+
+    <title>Done Task Desktop</title>
+  </head>
+
+  <body>
+    <div class="card-todo">
+      <h2>O que farei hoje?</h2>
+      <input
+        type="text"
+        id="inputTodo"
+        onkeyup="addNewTodo(event)"
+        placeholder="Escreva sua tarefa aqui..."
+      />
+      <button type="button" onclick="addNewTodo()" class="button-add">
+        Adicionar
+      </button>
+    </div>
+    <ul id="ulTodo"></ul>
+  </body>
+</html>
