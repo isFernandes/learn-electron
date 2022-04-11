@@ -2,13 +2,21 @@ Para rodar use o YARN ou NPM
 
 atraves do comando `yarn` ou `npm install`
 
-## Como funciona:
+## Aplicação
 
-- Este repositorio ira contemplar diversos projetos desenvolvidos para minha aprendizagem em electron;
-- Cada branch ira conter um projeto;
-- O nome da branch ira conter o nome do projeto e um readme o descrevendo;
-- Na main estara o projeto inicial. Primeiro e mais basico iniciado;
+Aplicação To-Do, ao qual voce cria e define tarefas diarias e vai marcando no decorrer do dia.
 
-### Projetos:
+Foi utilizado somente HTML, CSS e JS.
 
-1. Todo List
+## Estrutura de Paginas
+
+```
+- src
+|
+| - pages
+  | - MainScreen.html
+| - scripts
+  | - todo.js
+| - styles
+  | - todo.css
+```
