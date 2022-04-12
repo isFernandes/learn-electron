@@ -1,4 +1,5 @@
 const myList = document.querySelectorAll("li");
+      
       myList.forEach((_, index) => {
         let btn = document.createElement("button");
         let iconDelete = document.createTextNode("\u00D7");
@@ -9,6 +10,7 @@ const myList = document.querySelectorAll("li");
       });
 
       const closesButton = document.querySelectorAll(".close");
+      
       closesButton.forEach((_, index) => {
         closesButton[index].onClick = function () {
           const div = this.parentElement;
@@ -17,9 +19,11 @@ const myList = document.querySelectorAll("li");
       });
 
       const todoList = document.querySelector("ul");
+      
       todoList.addEventListener(
         "click",
         function ({ target }) {
+          console.log("click")
           console.log(target);
           if (target.tagName === "LI") {
             target.classList.toggle("checked");
@@ -33,12 +37,10 @@ const myList = document.querySelectorAll("li");
 
         const todoItem = document.createElement("li");
         const inputTodo = document.getElementById("inputTodo").value;
-        console.log(inputTodo);
-
         let tempVariable = document.createTextNode(inputTodo);
+        
         todoItem.appendChild(tempVariable);
 
-        console.log(todoItem);
         if (
           inputTodo === "" ||
           inputTodo === " " ||
@@ -54,10 +56,12 @@ const myList = document.querySelectorAll("li");
 
         const btn = document.createElement("button");
         let iconDelete = document.createTextNode("\u00D7");
+        
         btn.className = "close";
         btn.type = "button";
         btn.appendChild(iconDelete);
         todoItem.appendChild(btn);
+        
         btn.onclick = function () {
           const div = this.parentElement;
           div.style.display = "none";
